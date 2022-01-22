@@ -1,0 +1,61 @@
+.appWrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.header {
+    background: lightgray;
+    padding: 10px;
+}
+
+.blockInfoWrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.tableWrapper {
+    overflow: auto;
+    flex: 1 1 auto;
+    width: 100%
+}
+
+.spinnerWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.spinnerWrapper > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.label {
+    display: flex;
+    height: 40px;
+}
+
+.label > .value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1 1 auto;
+    white-space: pre;
+}
+
+.alert {
+    position: absolute;
+    bottom: 10px;
+    width: max-content;
+    left: -350px;
+    transition: .5s;
+}
+
+.alert.visible {
+    left: 10px;
+}
